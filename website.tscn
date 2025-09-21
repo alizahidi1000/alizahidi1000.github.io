@@ -1,11 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://cdeubewndgwh3"]
+[gd_scene load_steps=14 format=3 uid="uid://cdeubewndgwh3"]
 
 [ext_resource type="PackedScene" uid="uid://dr7do5pyv6vau" path="res://ali's logo.blend" id="1_3x1v8"]
 [ext_resource type="Shader" uid="uid://die24uul3grkb" path="res://ursc/canvas_item/dithering.gdshader" id="1_n2tec"]
 [ext_resource type="Texture2D" uid="uid://bs2fcne4q4og6" path="res://dithering.PNG" id="2_a782u"]
 [ext_resource type="Material" uid="uid://13w5r3n2mh51" path="res://reflective.tres" id="3_lbtts"]
 [ext_resource type="FontVariation" uid="uid://h5w6g4xkfqba" path="res://text.tres" id="4_7jcpp"]
-[ext_resource type="FontVariation" uid="uid://bu3yrrmf25e4n" path="res://text2.tres" id="5_a782u"]
+[ext_resource type="FontFile" uid="uid://cyiivrbfpy72i" path="res://Lexend/static/Lexend-Light.ttf" id="5_a782u"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lbtts"]
 shader = ExtResource("1_n2tec")
@@ -520,11 +520,9 @@ _data = {
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_a782u"]
 blend_mode = 2
 
-[sub_resource type="SystemFont" id="SystemFont_4yg08"]
-font_names = PackedStringArray("Century Gothic")
-
-[sub_resource type="FontVariation" id="FontVariation_a782u"]
-base_font = SubResource("SystemFont_4yg08")
+[sub_resource type="FontVariation" id="FontVariation_ekkw8"]
+base_font = ExtResource("5_a782u")
+spacing_glyph = -2
 
 [node name="Node2D" type="Node2D"]
 
@@ -598,7 +596,7 @@ offset_left = 5.0
 offset_top = 49.0
 offset_right = 503.0
 offset_bottom = 72.0
-theme_override_fonts/font = SubResource("FontVariation_a782u")
+theme_override_fonts/font = ExtResource("5_a782u")
 theme_override_font_sizes/font_size = 14
 text = "i make content, such as, but not limited to art and animations"
 
@@ -608,7 +606,7 @@ offset_left = 83.0
 offset_top = 170.0
 offset_right = 505.0
 offset_bottom = 205.0
-theme_override_fonts/font = SubResource("FontVariation_a782u")
+theme_override_fonts/font = ExtResource("5_a782u")
 theme_override_font_sizes/font_size = 12
 text = "powered by Godot Engine and GitHub Pages
 "
@@ -622,17 +620,17 @@ offset_left = 129.0
 offset_top = -218.0
 offset_right = 422.0
 offset_bottom = -183.0
-theme_override_fonts/font = SubResource("FontVariation_a782u")
+theme_override_fonts/font = ExtResource("5_a782u")
 theme_override_font_sizes/font_size = 12
 text = "note: this website's usage of pixelation and low 
-color depth with dithering are intentional."
+color depth with dithering is intentional."
 horizontal_alignment = 2
 
 [node name="Label" type="Label" parent="SubViewportContainer/SubViewport"]
 offset_left = 136.0
 offset_top = 38.0
-offset_right = 327.99585
-offset_bottom = 96.00037
+offset_right = 327.99582
+offset_bottom = 96.00038
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_7jcpp")
 theme_override_font_sizes/font_size = 46
@@ -646,7 +644,7 @@ offset_bottom = 97.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(1, 0, 0, 0.7529412)
 theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 0.7529412)
-theme_override_fonts/font = ExtResource("5_a782u")
+theme_override_fonts/font = SubResource("FontVariation_ekkw8")
 theme_override_font_sizes/font_size = 24
 text = "youtube"
 underline = 2
@@ -662,7 +660,7 @@ theme_override_colors/font_focus_color = Color(1, 0, 0.49803922, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.58431375, 1, 0.5058824)
 theme_override_colors/font_hover_color = Color(0, 0.7490196, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0.584, 1, 0.506)
-theme_override_fonts/font = ExtResource("5_a782u")
+theme_override_fonts/font = SubResource("FontVariation_ekkw8")
 theme_override_font_sizes/font_size = 24
 text = "tiktok"
 underline = 2
@@ -678,7 +676,7 @@ theme_override_colors/font_focus_color = Color(0.416, 0.384, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 0.7529412)
 theme_override_colors/font_hover_color = Color(0.53333336, 0.5294118, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 1, 0.7529412)
-theme_override_fonts/font = ExtResource("5_a782u")
+theme_override_fonts/font = SubResource("FontVariation_ekkw8")
 theme_override_font_sizes/font_size = 24
 text = "facebook"
 underline = 2
@@ -694,7 +692,7 @@ theme_override_colors/font_focus_color = Color(1, 0, 1, 1)
 theme_override_colors/font_pressed_color = Color(3.106, 1.543, 3.106, 0.502)
 theme_override_colors/font_hover_color = Color(1, 0.99607843, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(3.1064277, 1.5434879, 3.1064277, 0.5019608)
-theme_override_fonts/font = ExtResource("5_a782u")
+theme_override_fonts/font = SubResource("FontVariation_ekkw8")
 theme_override_font_sizes/font_size = 24
 text = "instagram"
 underline = 2

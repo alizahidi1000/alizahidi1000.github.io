@@ -1,0 +1,72 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="website"
+run/main_scene="uid://cdeubewndgwh3"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="uid://dfkndwee8yu8b"
+
+[display]
+
+window/size/viewport_width=512
+window/size/viewport_height=240
+window/size/mode=3
+window/stretch/mode="viewport"
+window/vsync/vsync_mode=0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+shading/overrides/force_vertex_shading=true
+shading/overrides/force_lambert_over_burley=true
+
+[shader_globals]
+
+affine_texture_mapping={
+"type": "bool",
+"value": true
+}
+fog_color={
+"type": "color",
+"value": Color(0, 0, 0, 1)
+}
+fog_start_distance={
+"type": "float",
+"value": 0.0
+}
+fog_end_distance={
+"type": "float",
+"value": 0.0
+}
+cull_distance={
+"type": "float",
+"value": 64.0
+}
+texture_filtering={
+"type": "bool",
+"value": false
+}
+texture_lod_halve_distance={
+"type": "float",
+"value": 0.0
+}
+vertex_snap_intensity={
+"type": "int",
+"value": 2
+}

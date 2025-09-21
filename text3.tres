@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://c1vxie1ej37p0"]
+
+[sub_resource type="SystemFont" id="SystemFont_b2n0i"]
+font_names = PackedStringArray("Century Gothic")
+
+[resource]
+base_font = SubResource("SystemFont_b2n0i")

@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://h5w6g4xkfqba"]
+
+[sub_resource type="SystemFont" id="SystemFont_ekkw8"]
+font_names = PackedStringArray("Century Gothic")
+
+[resource]
+base_font = SubResource("SystemFont_ekkw8")
+spacing_glyph = -3

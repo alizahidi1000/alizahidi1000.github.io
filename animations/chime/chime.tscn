@@ -137,8 +137,8 @@ shader_parameter/albedo_texture_as_primary_color = true
 shader_parameter/mix_factor = 1.0
 shader_parameter/texture_lod_halve_distance_override = 0.0
 shader_parameter/uv_offset = Vector2(1.135, 0)
-shader_parameter/uv_scale = Vector2(1, 13)
-shader_parameter/uv_scroll_speed = Vector2(0, 1.06)
+shader_parameter/uv_scale = Vector2(1, 24)
+shader_parameter/uv_scroll_speed = Vector2(0, 0.5)
 shader_parameter/cull_distance_override = 1024.0
 shader_parameter/convert_vertex_colors = false
 
@@ -509,7 +509,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0.3, 2),
 "transitions": PackedFloat32Array(0.2, 1),
 "update": 0,
-"values": [Vector2(4, 312.728), Vector2(4, 223.678)]
+"values": [Vector2(4, 312.728), Vector2(4, 221.418)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -1263,10 +1263,10 @@ tracks/0/path = NodePath("ali chimes-occonly/metarig/Skeleton3D/Plane_002:materi
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.3750002, 4.5916667, 6.941666, 8.008334, 8.183333, 8.308333, 8.5, 8.55, 8.724999, 8.849999, 9.041666),
+"times": PackedFloat32Array(0, 2.3750002, 4.5916667, 6.941666, 8.008334, 8.308333, 8.5, 8.55, 8.724999, 8.849999, 9.041666, 24.116667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0.02, 0), Vector2(0.11, 0.015), Vector2(0.34, 0.015), Vector2(0.02, 0.015), Vector2(0.02, 0), Vector2(0.11, 0.015), Vector2(0.34, 0.015), Vector2(0.02, 0.015), Vector2(0.02, 0), Vector2(0.11, 0.015), Vector2(0.34, 0.015), Vector2(0.02, 0.015)]
+"values": [Vector2(0.02, 0), Vector2(0.11, 0.015), Vector2(0.34, 0.015), Vector2(0.02, 0.015), Vector2(0.02, 0), Vector2(0.34, 0.015), Vector2(0.02, 0.015), Vector2(0.02, 0), Vector2(0.11, 0.015), Vector2(0.34, 0.015), Vector2(0.02, 0.015), Vector2(0.11, 0.015)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1338,7 +1338,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0, 1, 2.375, 3.0000002, 4.5916667, 5.5583334, 8.008333, 8.183333, 8.308333, 8.55, 8.725, 8.85, 9.116667, 11.425, 13.750001, 16.066668),
 "transitions": PackedFloat32Array(0.2, 1, 0.2, 1, 0.2, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000),
 "update": 0,
-"values": [Vector3(-3.605, -0.485, -1.365), Vector3(-0.115, 0, 1.64), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(16.804, -2.645, 3.037), Vector3(16.804, -2.645, 0.162), Vector3(16.804, -2.645, -2.598), Vector3(16.804, -2.645, -5.338)]
+"values": [Vector3(-3.605, -0.485, -1.365), Vector3(-0.115, 0, 1.64), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(-0.115, 0, 1.64), Vector3(1.1, 0.26, 2.765), Vector3(-3.705, 0.07, 1.34), Vector3(16.804, -2.645, 2.807), Vector3(16.804, -2.645, 0.162), Vector3(16.804, -2.645, -2.598), Vector3(16.804, -2.645, -5.338)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -1532,10 +1532,10 @@ ambient_light_energy = 0.0
 [sub_resource type="Environment" id="Environment_hctix"]
 background_mode = 3
 glow_enabled = true
-glow_intensity = 2.15
-glow_hdr_threshold = 0.65
-glow_hdr_scale = 1.75
-glow_hdr_luminance_cap = 137.38
+glow_intensity = 1.0
+glow_hdr_threshold = 0.0
+glow_hdr_scale = 2.71
+glow_hdr_luminance_cap = 85.61
 
 [sub_resource type="World3D" id="World3D_ipeh8"]
 environment = SubResource("Environment_hctix")
@@ -1544,10 +1544,9 @@ environment = SubResource("Environment_hctix")
 viewport_path = NodePath("SubViewport2")
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uj3ro"]
-blend_mode = 1
 
 [sub_resource type="Gradient" id="Gradient_hctix"]
-colors = PackedColorArray(0, 0, 0, 1, 0.0605302, 0.060530446, 0.060530044, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.05882353)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ipeh8"]
 gradient = SubResource("Gradient_hctix")
@@ -1640,11 +1639,11 @@ material_override = ExtResource("9_6o7q6")
 [node name="bkg" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=1812480177 instance=ExtResource("10_pkbni")]
 
 [node name="Plane" parent="SubViewportContainer/SubViewport/Camera3D/bkg" index="0" unique_id=1139563731]
-transform = Transform3D(29.715, 0, 0, 0, -1.298884e-06, -40.09, 0, 29.715, -1.7523896e-06, -0.07, -2.554, -73.315)
+transform = Transform3D(29.445, 0, 0, 0, -1.298884e-06, -39.665, 0, 29.715, -1.7338123e-06, 0.475, -2.354, -73.315)
 material_override = ExtResource("11_vvw4g")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/bkg" unique_id=1741997601]
-transform = Transform3D(95.151825, -95.151825, 0, 95.151825, 95.151825, 0, 0, 0, 134.565, 13.25968, -6.6240015, -57.358517)
+transform = Transform3D(95.151825, 95.151825, 0, -95.151825, 95.151825, 0, 0, 0, 134.565, 13.25968, -6.6240015, -57.358517)
 material_override = SubResource("ShaderMaterial_ipeh8")
 mesh = SubResource("QuadMesh_hctix")
 
@@ -1717,7 +1716,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86905
+offset_bottom = 366.86957
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1738,7 +1737,7 @@ layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05447
+offset_bottom = 368.05463
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1833,40 +1832,40 @@ theme_override_fonts/font = ExtResource("23_qlssn")
 theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
 
-[node name="ali chimes-occonly" parent="." unique_id=1022728671 instance=ExtResource("1_qv8pt")]
+[node name="ali chimes-occonly" parent="." unique_id=921602444 instance=ExtResource("1_qv8pt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 
-[node name="metarig" parent="ali chimes-occonly" index="0" unique_id=487900309]
+[node name="metarig" parent="ali chimes-occonly" index="0" unique_id=195871143]
 transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.13473946, 2.7531648, 0.0015489005, -3.287772, -0.5228258)
 
-[node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=397066563]
-bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
-bones/0/rotation = Quaternion(0.03114591, 0.0048649507, -0.00088293775, 0.99950266)
-bones/1/rotation = Quaternion(0.0011945737, -0.00794642, 0.0011939704, 0.99996704)
-bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.5266034e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.19937393, -0.0003812359, -0.00046191056, 0.97992337)
-bones/7/position = Vector3(0.018299993, 0.086056024, 0.025983164)
-bones/8/position = Vector3(-0.01973674, 0.10051731, 0.0024678316)
-bones/8/rotation = Quaternion(0.041552283, 0.70359695, -0.053437788, -0.7073678)
-bones/9/rotation = Quaternion(-0.083474025, -0.05805458, -0.6427628, 0.7592877)
-bones/10/rotation = Quaternion(0.07042297, 0.05567631, 0.6430086, 0.7605793)
-bones/11/position = Vector3(-0.018300006, 0.08644592, 0.026003905)
+[node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=772673456]
+bones/0/position = Vector3(-0.0003936647, 1.1225011, -0.040166106)
+bones/0/rotation = Quaternion(0.05303929, 0.0048831287, -0.00077612593, 0.9985802)
+bones/1/rotation = Quaternion(0.0011945725, -0.007946421, 0.0011939704, 0.99996704)
+bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526602e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.11748684, -0.009815617, -0.0036374524, 0.99301934)
+bones/7/position = Vector3(0.01829838, 0.074379794, 0.025372526)
+bones/8/position = Vector3(-0.025699863, 0.12437617, 0.03034261)
+bones/8/rotation = Quaternion(-0.5420832, 0.57986957, -0.40168917, 0.45666504)
+bones/9/rotation = Quaternion(-0.005103549, -0.11522776, -0.007749465, 0.9932958)
+bones/10/rotation = Quaternion(-0.006957396, -0.10040095, 0.0100258505, 0.9948723)
+bones/11/position = Vector3(-0.01829834, 0.07514302, 0.025391724)
 bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
-bones/12/position = Vector3(0.019665191, 0.10008553, 0.008038127)
-bones/12/rotation = Quaternion(0.016018538, -0.69619465, 0.045411408, -0.71623623)
-bones/13/rotation = Quaternion(-0.0524264, 0.09040954, 0.58718705, 0.8026762)
-bones/14/rotation = Quaternion(0.036173597, -0.1588471, -0.6222681, 0.76566404)
-bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
-bones/19/rotation = Quaternion(0.99932504, 0.030854043, 0.0052279863, 0.01924298)
-bones/20/rotation = Quaternion(0.01019522, -0.0013837009, -0.013620114, 0.9998543)
-bones/21/rotation = Quaternion(-0.52018255, -0.021646753, 0.037761383, 0.8529453)
-bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
-bones/24/rotation = Quaternion(0.99935883, -0.028946476, 0.006159009, 0.020155195)
-bones/25/rotation = Quaternion(0.010204022, -0.0026969828, 0.01361353, 0.9998517)
-bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.03653238, 0.85289174)
+bones/12/position = Vector3(0.02574571, 0.1253482, 0.030882318)
+bones/12/rotation = Quaternion(-0.38290963, -0.46692684, 0.5833584, 0.5431874)
+bones/13/rotation = Quaternion(0.0032280071, 0.11536341, -0.023454329, 0.99304116)
+bones/14/rotation = Quaternion(0.02403415, -0.12948857, 0.022800436, 0.99102736)
+bones/19/position = Vector3(0.06779961, 0.06873255, -0.0025711632)
+bones/19/rotation = Quaternion(0.9985062, 0.017443655, 0.0005627622, -0.05177848)
+bones/20/rotation = Quaternion(0.29129386, 0.024956955, -0.007854984, 0.95627576)
+bones/21/rotation = Quaternion(-0.5477626, -0.019277763, 0.031910527, 0.83580285)
+bones/24/position = Vector3(-0.06711659, -0.008689527, 0.0005146744)
+bones/24/rotation = Quaternion(0.98659474, -0.01531381, 0.017041279, 0.16157362)
+bones/25/rotation = Quaternion(-0.007010895, 0.045340206, 0.019575447, 0.9987553)
+bones/26/rotation = Quaternion(-0.37179834, -0.05032658, -0.05258701, 0.9254555)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
-[node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=1477999764]
+[node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=1404101403]
 material_override = ExtResource("2_aproi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ali chimes-occonly/metarig/Skeleton3D/Cube" index="0" unique_id=1964718383]
@@ -1875,22 +1874,22 @@ mesh = SubResource("ArrayMesh_owm5q")
 skin = SubResource("Skin_qks7l")
 skeleton = NodePath("../..")
 
-[node name="Plane" parent="ali chimes-occonly/metarig/Skeleton3D" index="1" unique_id=1674877498]
+[node name="Plane" parent="ali chimes-occonly/metarig/Skeleton3D" index="1" unique_id=316726344]
 transform = Transform3D(1.08, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 surface_material_override/0 = ExtResource("3_nvhes")
 
-[node name="Plane_001" parent="ali chimes-occonly/metarig/Skeleton3D" index="2" unique_id=1568719482]
+[node name="Plane_001" parent="ali chimes-occonly/metarig/Skeleton3D" index="2" unique_id=1639999868]
 transform = Transform3D(1, 0, 0, 0, 1, -3.7252903e-09, 0, 3.7252903e-09, 1, 0, -0.03, 0)
 material_override = ExtResource("4_4x2a6")
 
-[node name="Plane_002" parent="ali chimes-occonly/metarig/Skeleton3D" index="3" unique_id=1094896465]
+[node name="Plane_002" parent="ali chimes-occonly/metarig/Skeleton3D" index="3" unique_id=1538124479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03, 0)
 material_override = ExtResource("5_veyu0")
 
-[node name="Plane_003" parent="ali chimes-occonly/metarig/Skeleton3D" index="4" unique_id=397781352]
+[node name="Plane_003" parent="ali chimes-occonly/metarig/Skeleton3D" index="4" unique_id=1784694310]
 material_override = ExtResource("6_nn6s0")
 
-[node name="Cube_001" parent="ali chimes-occonly" index="1" unique_id=464642424]
+[node name="Cube_001" parent="ali chimes-occonly" index="1" unique_id=142120048]
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1740167373]
@@ -1921,7 +1920,7 @@ render_target_clear_mode = 2
 render_target_update_mode = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1113274380]
-modulate = Color(1.563596, 1.563596, 1.563596, 0.29411766)
+modulate = Color(1.206, 1.206, 1.206, 0.247)
 self_modulate = Color(1.2061527, 1.2061527, 1.2061527, 1)
 scale = Vector2(3, 3)
 texture = SubResource("ViewportTexture_dvey8")

@@ -3,8 +3,8 @@
 [ext_resource type="Shader" uid="uid://0mkg234j1sjt" path="res://ursc/spatial/metallic/metallic_transparent.gdshader" id="1_wwhph"]
 
 [sub_resource type="Gradient" id="Gradient_wwhph"]
-offsets = PackedFloat32Array(0.025974026, 0.22943723, 0.59090906, 0.6233766, 0.75541127, 0.91558444, 0.96753246, 1)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.2627451, 1, 1, 1, 0, 1, 1, 1, 0.2627451, 1, 1, 1, 0.50185484, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1)
+offsets = PackedFloat32Array(0.025974026, 0.22943723, 0.59090906, 0.6233766, 0.75541127, 0.9452381, 0.9690476, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.2627451, 1, 1, 1, 0, 1, 1, 1, 0.2627451, 1, 1, 1, 0.50185484, 1, 1, 1, 1, 1, 1, 1, 0.41568628, 1, 1, 1, 0.827451)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_8wpju"]
 gradient = SubResource("Gradient_wwhph")

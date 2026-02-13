@@ -1,9 +1,0 @@
-[gd_resource type="FontVariation" format=3 uid="uid://qe5d0avqe6w2"]
-
-[ext_resource type="FontFile" uid="uid://chdyey6esrgfr" path="res://metropolis-2/Metropolis-Black.otf" id="1_nhnaq"]
-
-[resource]
-base_font = ExtResource("1_nhnaq")
-spacing_glyph = -1
-spacing_space = -1
-baseline_offset = 0.315

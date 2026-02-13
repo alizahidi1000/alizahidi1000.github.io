@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dek4nh31eit18"]
+
+[ext_resource type="Shader" uid="uid://lqmbpuehwtxc" path="res://ursc/spatial/sprite/sprite_unshaded.gdshader" id="1_j8fw8"]
+[ext_resource type="Texture2D" uid="uid://c3ybap7b7m836" path="res://psp-occ_frame_00002.png" id="2_j8fw8"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j8fw8")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_j8fw8")
+shader_parameter/alpha_scissor = 0.1
+shader_parameter/texture_lod_halve_distance_override = 0.0
+shader_parameter/uv_offset = Vector2(0.025, 0.86)
+shader_parameter/uv_scale = Vector2(-0.2, 0.115)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/billboard_mode = 0
+shader_parameter/use_transform_scale = true
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/convert_vertex_colors = false

@@ -1,0 +1,10 @@
+[gd_resource type="FontVariation" format=3 uid="uid://dsksruacqkwku"]
+
+[ext_resource type="FontFile" uid="uid://chdyey6esrgfr" path="res://metropolis-2/Metropolis-Black.otf" id="1_1ihfc"]
+
+[resource]
+base_font = ExtResource("1_1ihfc")
+spacing_space = -1
+spacing_top = 8
+spacing_bottom = -5
+baseline_offset = -0.5

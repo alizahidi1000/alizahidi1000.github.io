@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clqtc13aq2pu8"
+path="res://.godot/imported/chime meme part.wav-84805343ca3dc1e5012d3a8bb9d04d13.sample"
+
+[deps]
+
+source_file="res://chime meme part.wav"
+dest_files=["res://.godot/imported/chime meme part.wav-84805343ca3dc1e5012d3a8bb9d04d13.sample"]
+
+[params]
+
+force/8_bit=true
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=11025.0
+edit/trim=false
+edit/normalize=true
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

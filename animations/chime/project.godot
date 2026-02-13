@@ -17,7 +17,6 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Chime - animation meme"
 run/main_scene="uid://gsjn4rvbor1f"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-run/low_processor_mode=true
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 boot_splash/stretch_mode=0

@@ -1845,28 +1845,29 @@ transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.1347394
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=397066563]
 bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
-bones/0/rotation = Quaternion(0.031145912, 0.00486495, -0.000882938, 0.9995027)
-bones/1/rotation = Quaternion(0.0011945743, -0.00794642, 0.0011939706, 0.99996704)
-bones/2/rotation = Quaternion(-0.026529456, 0.003115655, -7.526604e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.17824051, -0.0004565264, -0.0005531478, 0.9839867)
-bones/7/position = Vector3(0.018299993, 0.08817869, 0.026096083)
-bones/8/position = Vector3(-0.020565862, 0.12460124, 0.060571592)
-bones/8/rotation = Quaternion(-0.51129436, 0.5093157, -0.49020764, 0.4887454)
-bones/9/rotation = Quaternion(-0.005103548, -0.11522775, -0.007749468, 0.9932958)
-bones/10/rotation = Quaternion(-0.0069573815, -0.10040093, 0.010025848, 0.9948723)
-bones/11/position = Vector3(-0.018300004, 0.08817869, 0.026096081)
-bones/11/rotation = Quaternion(-0.47638813, 0.49934232, 0.5241489, 0.49897859)
-bones/12/position = Vector3(0.02061377, 0.12557766, 0.057118334)
-bones/12/rotation = Quaternion(-0.52982503, -0.50672364, 0.48515698, 0.47659135)
-bones/13/rotation = Quaternion(0.003227996, 0.115363404, -0.023454336, 0.9930412)
-bones/14/rotation = Quaternion(0.024034152, -0.12948857, 0.022800444, 0.99102736)
+bones/0/rotation = Quaternion(0.031145908, 0.00486495, -0.0008829379, 0.9995027)
+bones/1/rotation = Quaternion(0.0011945738, -0.00794642, 0.0011939704, 0.99996704)
+bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.5266034e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.07328921, -0.00082308095, -0.0009973408, 0.9973099)
+bones/7/position = Vector3(0.018299993, 0.07543048, 0.025417898)
+bones/7/rotation = Quaternion(0.47638795, 0.49934247, 0.52414906, -0.49897853)
+bones/8/position = Vector3(-0.019714143, 0.100514166, 0.0063959984)
+bones/8/rotation = Quaternion(-0.0030502486, 0.70777094, -0.0014360034, -0.70643395)
+bones/9/rotation = Quaternion(-0.083475515, -0.05804927, -0.64276284, 0.7592879)
+bones/10/rotation = Quaternion(0.07371071, 0.052295886, 0.6443478, 0.75937337)
+bones/11/position = Vector3(-0.018300004, 0.076224476, 0.025460133)
+bones/11/rotation = Quaternion(-0.47638807, 0.4993423, 0.5241489, 0.49897864)
+bones/12/position = Vector3(0.019658454, 0.10008458, 0.00921212)
+bones/12/rotation = Quaternion(-0.032977447, -0.69529355, -0.00263056, -0.71796405)
+bones/13/rotation = Quaternion(-0.05242623, 0.090409726, 0.58718485, 0.80267775)
+bones/14/rotation = Quaternion(0.03617359, -0.1588471, -0.6222681, 0.76566404)
 bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
-bones/19/rotation = Quaternion(0.999325, 0.030854043, 0.0052279863, 0.01924298)
-bones/20/rotation = Quaternion(0.010195221, -0.001383701, -0.013620114, 0.9998543)
-bones/21/rotation = Quaternion(-0.5201826, -0.021646751, 0.037761386, 0.8529452)
+bones/19/rotation = Quaternion(0.999325, 0.030854039, 0.005227986, 0.019242978)
+bones/20/rotation = Quaternion(0.01019522, -0.0013837009, -0.013620114, 0.9998543)
+bones/21/rotation = Quaternion(-0.5201826, -0.021646755, 0.03776139, 0.8529452)
 bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
-bones/24/rotation = Quaternion(0.99938107, -0.028939452, 0.0061919307, 0.01901841)
-bones/25/rotation = Quaternion(0.010204022, -0.0026969826, 0.013613529, 0.99985164)
+bones/24/rotation = Quaternion(0.9993602, -0.028946048, 0.0061610145, 0.020085923)
+bones/25/rotation = Quaternion(0.010204021, -0.0026969826, 0.0136135295, 0.99985164)
 bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.036532383, 0.85289174)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
@@ -1927,24 +1928,17 @@ render_target_update_mode = 4
 [node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1113274380]
 modulate = Color(1.563596, 1.563596, 1.563596, 0.29411766)
 self_modulate = Color(1.2061527, 1.2061527, 1.2061527, 1)
-z_as_relative = false
-y_sort_enabled = true
 scale = Vector2(3, 3)
 texture = SubResource("ViewportTexture_dvey8")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=98361380]
-z_as_relative = false
-y_sort_enabled = true
 material = SubResource("CanvasItemMaterial_uj3ro")
 position = Vector2(0, 240)
 scale = Vector2(384, 7.5)
 texture = SubResource("GradientTexture2D_ipeh8")
 
 [node name="Sprite2D3" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1690173708]
-top_level = true
-z_as_relative = false
-y_sort_enabled = true
 texture_repeat = 2
 material = SubResource("CanvasItemMaterial_hctix")
 texture = ExtResource("32_hctix")

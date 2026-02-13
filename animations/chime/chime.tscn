@@ -1555,7 +1555,8 @@ gradient = SubResource("Gradient_hctix")
 width = 1
 fill_to = Vector2(0, 1)
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kslid"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hctix"]
+blend_mode = 3
 
 [node name="Node3D" type="Node3D" unique_id=903079790]
 script = ExtResource("15_7ki8r")
@@ -1719,7 +1720,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86932
+offset_bottom = 366.8692
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1740,7 +1741,7 @@ layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05475
+offset_bottom = 368.0547
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1842,30 +1843,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.13473946, 2.7531648, 0.0015489005, -3.287772, -0.5228258)
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=397066563]
-bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
-bones/0/rotation = Quaternion(0.03114591, 0.00486495, -0.0008829378, 0.99950266)
-bones/1/rotation = Quaternion(0.0011945739, -0.00794642, 0.0011939704, 0.99996704)
-bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526604e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.07300775, -0.0008240478, -0.0009985125, 0.9973306)
-bones/7/position = Vector3(0.018299993, 0.07553268, 0.025423335)
-bones/8/position = Vector3(-0.019708408, 0.10054762, 0.0076827244)
-bones/8/rotation = Quaternion(-0.0031767576, 0.70777804, -0.0012884714, -0.7064265)
-bones/9/rotation = Quaternion(-0.0834824, -0.058024988, -0.642763, 0.7592888)
-bones/10/rotation = Quaternion(0.14576113, -0.022618443, 0.66970164, 0.72783375)
-bones/11/position = Vector3(-0.018300004, 0.07634204, 0.025466388)
-bones/11/rotation = Quaternion(-0.47638807, 0.4993423, 0.5241489, 0.49897864)
-bones/12/position = Vector3(0.019655341, 0.10011081, 0.0099771805)
-bones/12/rotation = Quaternion(-0.033113267, -0.6952865, -0.0027639328, -0.7179642)
-bones/13/rotation = Quaternion(-0.0524253, 0.09041062, 0.587175, 0.8026849)
-bones/14/rotation = Quaternion(0.036173586, -0.1588471, -0.622268, 0.7656641)
-bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
-bones/19/rotation = Quaternion(0.999325, 0.030854039, 0.005227986, 0.01924298)
-bones/20/rotation = Quaternion(0.01019522, -0.0013837008, -0.013620114, 0.9998543)
-bones/21/rotation = Quaternion(-0.52018255, -0.021646755, 0.037761386, 0.8529453)
-bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
-bones/24/rotation = Quaternion(0.9993665, -0.0289441, 0.006170172, 0.019769741)
-bones/25/rotation = Quaternion(0.010204022, -0.0026969828, 0.01361353, 0.9998517)
-bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.03653238, 0.85289174)
+bones/0/position = Vector3(0.0040078317, 0.9720568, -0.04334784)
+bones/0/rotation = Quaternion(0.01012985, 0.0048753084, -0.0009864237, 0.99993634)
+bones/1/rotation = Quaternion(0.41132566, -0.010529301, -0.0071501676, 0.9113996)
+bones/2/rotation = Quaternion(-0.026529456, 0.003115655, -7.526666e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.04731064, 4.821814e-13, 1.1214288e-08, 0.9988803)
+bones/7/position = Vector3(0.018297033, 0.07433477, 0.025378872)
+bones/7/rotation = Quaternion(0.51474273, 0.5396355, 0.4825646, -0.45930922)
+bones/8/position = Vector3(-0.02411722, 0.12449349, -0.0009920968)
+bones/8/rotation = Quaternion(-0.28672132, 0.37255135, -0.60621345, 0.641484)
+bones/9/rotation = Quaternion(-0.005103549, -0.11522775, -0.007749468, 0.9932958)
+bones/10/rotation = Quaternion(-0.006957392, -0.10040092, 0.010025847, 0.9948723)
+bones/11/position = Vector3(-0.018297032, 0.07507106, 0.025379317)
+bones/11/rotation = Quaternion(-0.5147428, 0.5396352, 0.4825646, 0.45930937)
+bones/12/position = Vector3(0.024801679, 0.12543784, -0.004262665)
+bones/12/rotation = Quaternion(-0.29198265, -0.35395113, 0.63584477, 0.62061775)
+bones/13/rotation = Quaternion(0.0032279955, 0.11536343, -0.02345433, 0.99304116)
+bones/14/rotation = Quaternion(0.024034154, -0.12948856, 0.02280044, 0.99102736)
+bones/19/position = Vector3(0.06786896, 0.014526833, 0.0008437293)
+bones/19/rotation = Quaternion(0.9605601, 0.028685186, -0.002391907, 0.27657872)
+bones/20/rotation = Quaternion(0.50666517, 0.03115181, -0.00620309, 0.8615576)
+bones/21/rotation = Quaternion(-0.72315294, -0.028382951, 0.032961536, 0.689317)
+bones/24/position = Vector3(-0.06713749, 0.013739134, -0.001107924)
+bones/24/rotation = Quaternion(0.9605283, -0.028831938, 0.013974843, 0.27633095)
+bones/25/rotation = Quaternion(0.505943, -0.04323547, 0.017171815, 0.8613115)
+bones/26/rotation = Quaternion(-0.723025, 0.034582414, -0.027121803, 0.68942237)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
 [node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=1477999764]
@@ -1923,7 +1925,7 @@ render_target_clear_mode = 2
 render_target_update_mode = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1113274380]
-modulate = Color(1.4369954, 1.4369954, 1.4369954, 0.29411766)
+modulate = Color(1.563596, 1.563596, 1.563596, 0.29411766)
 self_modulate = Color(1.2061527, 1.2061527, 1.2061527, 1)
 y_sort_enabled = true
 scale = Vector2(3, 3)
@@ -1941,10 +1943,9 @@ texture = SubResource("GradientTexture2D_ipeh8")
 stream = ExtResource("17_n5kw2")
 
 [node name="Sprite2D3" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1690173708]
-modulate = Color(0, 0, 0, 0.2509804)
 top_level = true
 texture_repeat = 2
-material = SubResource("CanvasItemMaterial_kslid")
+material = SubResource("CanvasItemMaterial_hctix")
 texture = ExtResource("32_hctix")
 centered = false
 region_enabled = true

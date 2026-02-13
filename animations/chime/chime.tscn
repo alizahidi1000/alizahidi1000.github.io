@@ -34,6 +34,13 @@
 [ext_resource type="Shader" uid="uid://d0whqksme7mvk" path="res://ursc/canvas_item/dithering.gdshader" id="29_owm5q"]
 [ext_resource type="Texture2D" uid="uid://cnw2acs5mfiak" path="res://godotsubpixel.png" id="32_hctix"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_owm5q"]
+shader = ExtResource("29_owm5q")
+shader_parameter/color_depth = 24.0
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_uj3ro"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ixpvq"]
 render_priority = 0
 shader = ExtResource("4_hctix")
@@ -889,13 +896,6 @@ fill_from = Vector2(1, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_owm5q"]
 texture = SubResource("GradientTexture2D_qlssn")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_owm5q"]
-shader = ExtResource("29_owm5q")
-shader_parameter/color_depth = 24.0
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_uj3ro"]
-viewport_path = NodePath("SubViewportContainer/SubViewport")
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uj3ro"]
 render_priority = 0
 shader = ExtResource("4_veyu0")
@@ -1536,13 +1536,12 @@ glow_intensity = 2.15
 glow_hdr_threshold = 0.65
 glow_hdr_scale = 1.75
 glow_hdr_luminance_cap = 137.38
-adjustment_enabled = true
 
 [sub_resource type="World3D" id="World3D_ipeh8"]
 environment = SubResource("Environment_hctix")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_dvey8"]
-viewport_path = NodePath("SubViewportContainer/SubViewport")
+viewport_path = NodePath("SubViewport2")
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uj3ro"]
 blend_mode = 1
@@ -1560,6 +1559,14 @@ blend_mode = 3
 
 [node name="Node3D" type="Node3D" unique_id=903079790]
 script = ExtResource("15_7ki8r")
+
+[node name="SubViewport2" type="SubViewport" parent="." unique_id=451658771]
+size = Vector2i(128, 160)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewport2" unique_id=830682723]
+material = SubResource("ShaderMaterial_owm5q")
+texture = SubResource("ViewportTexture_uj3ro")
+centered = false
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=578943039]
 z_as_relative = false
@@ -1710,7 +1717,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86926
+offset_bottom = 366.86905
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1731,7 +1738,7 @@ layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05457
+offset_bottom = 368.05447
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1826,17 +1833,6 @@ theme_override_fonts/font = ExtResource("23_qlssn")
 theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
 
-[node name="BackBufferCopy" type="BackBufferCopy" parent="SubViewportContainer/SubViewport" unique_id=1700416141]
-z_as_relative = false
-y_sort_enabled = true
-position = Vector2(67.66667, 74)
-copy_mode = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport" unique_id=830682723]
-material = SubResource("ShaderMaterial_owm5q")
-texture = SubResource("ViewportTexture_uj3ro")
-centered = false
-
 [node name="ali chimes-occonly" parent="." unique_id=1022728671 instance=ExtResource("1_qv8pt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 
@@ -1845,30 +1841,29 @@ transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.1347394
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=397066563]
 bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
-bones/0/rotation = Quaternion(0.031145908, 0.00486495, -0.0008829379, 0.9995027)
-bones/1/rotation = Quaternion(0.0011945738, -0.00794642, 0.0011939704, 0.99996704)
+bones/0/rotation = Quaternion(0.03114591, 0.0048649507, -0.00088293775, 0.99950266)
+bones/1/rotation = Quaternion(0.0011945737, -0.00794642, 0.0011939704, 0.99996704)
 bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.5266034e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.07328921, -0.00082308095, -0.0009973408, 0.9973099)
-bones/7/position = Vector3(0.018299993, 0.07543048, 0.025417898)
-bones/7/rotation = Quaternion(0.47638795, 0.49934247, 0.52414906, -0.49897853)
-bones/8/position = Vector3(-0.019714143, 0.100514166, 0.0063959984)
-bones/8/rotation = Quaternion(-0.0030502486, 0.70777094, -0.0014360034, -0.70643395)
-bones/9/rotation = Quaternion(-0.083475515, -0.05804927, -0.64276284, 0.7592879)
-bones/10/rotation = Quaternion(0.07371071, 0.052295886, 0.6443478, 0.75937337)
-bones/11/position = Vector3(-0.018300004, 0.076224476, 0.025460133)
-bones/11/rotation = Quaternion(-0.47638807, 0.4993423, 0.5241489, 0.49897864)
-bones/12/position = Vector3(0.019658454, 0.10008458, 0.00921212)
-bones/12/rotation = Quaternion(-0.032977447, -0.69529355, -0.00263056, -0.71796405)
-bones/13/rotation = Quaternion(-0.05242623, 0.090409726, 0.58718485, 0.80267775)
-bones/14/rotation = Quaternion(0.03617359, -0.1588471, -0.6222681, 0.76566404)
+bones/4/rotation = Quaternion(0.19937393, -0.0003812359, -0.00046191056, 0.97992337)
+bones/7/position = Vector3(0.018299993, 0.086056024, 0.025983164)
+bones/8/position = Vector3(-0.01973674, 0.10051731, 0.0024678316)
+bones/8/rotation = Quaternion(0.041552283, 0.70359695, -0.053437788, -0.7073678)
+bones/9/rotation = Quaternion(-0.083474025, -0.05805458, -0.6427628, 0.7592877)
+bones/10/rotation = Quaternion(0.07042297, 0.05567631, 0.6430086, 0.7605793)
+bones/11/position = Vector3(-0.018300006, 0.08644592, 0.026003905)
+bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
+bones/12/position = Vector3(0.019665191, 0.10008553, 0.008038127)
+bones/12/rotation = Quaternion(0.016018538, -0.69619465, 0.045411408, -0.71623623)
+bones/13/rotation = Quaternion(-0.0524264, 0.09040954, 0.58718705, 0.8026762)
+bones/14/rotation = Quaternion(0.036173597, -0.1588471, -0.6222681, 0.76566404)
 bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
-bones/19/rotation = Quaternion(0.999325, 0.030854039, 0.005227986, 0.019242978)
+bones/19/rotation = Quaternion(0.99932504, 0.030854043, 0.0052279863, 0.01924298)
 bones/20/rotation = Quaternion(0.01019522, -0.0013837009, -0.013620114, 0.9998543)
-bones/21/rotation = Quaternion(-0.5201826, -0.021646755, 0.03776139, 0.8529452)
+bones/21/rotation = Quaternion(-0.52018255, -0.021646753, 0.037761383, 0.8529453)
 bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
-bones/24/rotation = Quaternion(0.9993602, -0.028946048, 0.0061610145, 0.020085923)
-bones/25/rotation = Quaternion(0.010204021, -0.0026969826, 0.0136135295, 0.99985164)
-bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.036532383, 0.85289174)
+bones/24/rotation = Quaternion(0.99935883, -0.028946476, 0.006159009, 0.020155195)
+bones/25/rotation = Quaternion(0.010204022, -0.0026969828, 0.01361353, 0.9998517)
+bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.03653238, 0.85289174)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
 [node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=1477999764]

@@ -32,7 +32,7 @@
 [ext_resource type="FontFile" uid="uid://c4herxotu7xuf" path="res://GNU Unifont/unifont-16.0.04.otf" id="17_pkbni"]
 [ext_resource type="FontFile" uid="uid://c5a3yalbf6bb2" path="res://Lexend/Lexend-VariableFont_wght.ttf" id="23_qlssn"]
 [ext_resource type="Shader" uid="uid://d0whqksme7mvk" path="res://ursc/canvas_item/dithering.gdshader" id="29_owm5q"]
-[ext_resource type="Texture2D" uid="uid://clyc36tmd1s5y" path="res://pixelgrid.png" id="30_owm5q"]
+[ext_resource type="Texture2D" uid="uid://cnw2acs5mfiak" path="res://godotsubpixel.png" id="32_hctix"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_owm5q"]
 shader = ExtResource("29_owm5q")
@@ -1942,7 +1942,7 @@ modulate = Color(0, 0, 0, 0.2509804)
 z_as_relative = false
 texture_repeat = 2
 material = SubResource("CanvasItemMaterial_kslid")
-texture = ExtResource("30_owm5q")
+texture = ExtResource("32_hctix")
 centered = false
 region_enabled = true
 region_rect = Rect2(0.305, -0.97, 384, 480)

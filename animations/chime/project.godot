@@ -52,9 +52,6 @@ common/enable_object_picking=false
 
 occlusion_culling/bvh_build_quality=0
 textures/canvas_textures/default_texture_filter=0
-gl_compatibility/nvidia_disable_threaded_optimization=false
-gl_compatibility/fallback_to_angle=false
-gl_compatibility/fallback_to_native=false
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true

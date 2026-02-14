@@ -39,7 +39,7 @@ shader = ExtResource("29_owm5q")
 shader_parameter/color_depth = 24.0
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_uj3ro"]
-viewport_path = NodePath("SubViewportContainer/SubViewport")
+viewport_path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ixpvq"]
 render_priority = 0
@@ -559,32 +559,34 @@ tracks/8/keys = {
 "update": 0,
 "values": [true, false]
 }
-tracks/9/type = "animation"
+tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("../../AnimationPlayer")
+tracks/9/path = NodePath("ColorRect2:color")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"clips": PackedStringArray("[stop]", "anim", "[stop]", "anim"),
-"times": PackedFloat32Array(4.866667, 4.9, 23.166668, 23.183332)
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("ColorRect2:color")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
 "times": PackedFloat32Array(41.45, 41.466667, 42.683334),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
 }
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Label:visible")
+tracks/10/interp = 0
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(41.45, 41.466667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [false, true]
+}
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Label:visible")
+tracks/11/path = NodePath("Label2:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -596,134 +598,132 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Label2:visible")
-tracks/12/interp = 0
+tracks/12/path = NodePath("Button:modulate")
+tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(41.45, 41.466667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [false, true]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Button:modulate")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
 "times": PackedFloat32Array(43.45, 44.36667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("Button:visible")
-tracks/14/interp = 0
-tracks/14/loop_wrap = true
-tracks/14/keys = {
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Button:visible")
+tracks/13/interp = 0
+tracks/13/loop_wrap = true
+tracks/13/keys = {
 "times": PackedFloat32Array(43.45, 43.466667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [false, true]
 }
-tracks/15/type = "value"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("../../SubViewportContainer2/SubViewport2/AudioStreamPlayer2D:volume_db")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("../../SubViewportContainer2/SubViewport2/AudioStreamPlayer2D:volume_db")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
 "times": PackedFloat32Array(41.466667, 49.966667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, -64.0]
 }
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("../../SubViewportContainer2/SubViewport2/AudioStreamPlayer2D:playing")
-tracks/16/interp = 0
-tracks/16/loop_wrap = true
-tracks/16/keys = {
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("../../SubViewportContainer2/SubViewport2/AudioStreamPlayer2D:playing")
+tracks/15/interp = 0
+tracks/15/loop_wrap = true
+tracks/15/keys = {
 "times": PackedFloat32Array(0, 49.766666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
 }
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Label:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, -53.745)]
+}
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Label:position")
+tracks/17/path = NodePath("Label2:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-1, -53.745)]
+"values": [Vector2(5, 48.005)]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Label2:position")
+tracks/18/path = NodePath("Button:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(5, 48.005)]
+"values": [Vector2(32, 127.105)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Button:position")
+tracks/19/path = NodePath("Button:text")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(32, 127.105)]
+"update": 1,
+"values": ["Replay?"]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Button:text")
+tracks/20/path = NodePath("Label:modulate")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Replay?"]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Label:modulate")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
 "times": PackedFloat32Array(41.45),
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Label3:modulate")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Label3:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
 "times": PackedFloat32Array(41.550003, 41.56667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/22/type = "animation"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("../../../AnimationPlayer")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"clips": PackedStringArray("[stop]", "anim", "[stop]", "anim"),
+"times": PackedFloat32Array(4.9166665, 4.9333334, 23.2, 23.216667)
 }
 
 [sub_resource type="Animation" id="Animation_yu0oo"]
@@ -895,6 +895,33 @@ fill_from = Vector2(1, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_owm5q"]
 texture = SubResource("GradientTexture2D_qlssn")
+
+[sub_resource type="Environment" id="Environment_hctix"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 1.0
+glow_hdr_threshold = 0.0
+glow_hdr_scale = 2.71
+glow_hdr_luminance_cap = 85.61
+
+[sub_resource type="World3D" id="World3D_ipeh8"]
+environment = SubResource("Environment_hctix")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_dvey8"]
+viewport_path = NodePath("ResourcePreloader/SubViewport2")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uj3ro"]
+
+[sub_resource type="Gradient" id="Gradient_hctix"]
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.05882353)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ipeh8"]
+gradient = SubResource("Gradient_hctix")
+width = 1
+fill_to = Vector2(0, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hctix"]
+blend_mode = 3
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uj3ro"]
 render_priority = 0
@@ -1074,7 +1101,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/5/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -1086,7 +1113,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewportContainer/SubViewport/Camera3D:rotation")
+tracks/6/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -1122,7 +1149,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled:rotation")
+tracks/9/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -1134,7 +1161,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/MeshInstance3D:visible")
+tracks/10/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/MeshInstance3D:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1146,7 +1173,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere:visible")
+tracks/11/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -1158,7 +1185,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled:position")
+tracks/12/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -1170,7 +1197,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses:visible")
+tracks/13/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses:visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -1182,7 +1209,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/cat/Cube:visible")
+tracks/14/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/cat/Cube:visible")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -1206,7 +1233,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery:visible")
+tracks/16/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery:visible")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -1218,7 +1245,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:position")
+tracks/17/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -1230,7 +1257,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:scale")
+tracks/18/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:scale")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -1242,7 +1269,7 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:mesh:material:shader_parameter/albedo_color")
+tracks/19/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:mesh:material:shader_parameter/albedo_color")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
@@ -1266,7 +1293,7 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("SubViewportContainer/SubViewport/Camera3D/bkg/Plane:position")
+tracks/21/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg/Plane:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
@@ -1278,7 +1305,7 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("SubViewportContainer/SubViewport/Camera3D/bkg/Plane:scale")
+tracks/22/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg/Plane:scale")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
@@ -1367,7 +1394,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/6/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -1379,7 +1406,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewportContainer/SubViewport/Camera3D:rotation")
+tracks/7/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D:rotation")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -1415,7 +1442,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled:rotation")
+tracks/10/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1427,7 +1454,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/MeshInstance3D:visible")
+tracks/11/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/MeshInstance3D:visible")
 tracks/11/interp = 0
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -1439,7 +1466,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere:visible")
+tracks/12/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere:visible")
 tracks/12/interp = 0
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -1451,7 +1478,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled:position")
+tracks/13/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -1463,7 +1490,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses:visible")
+tracks/14/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses:visible")
 tracks/14/interp = 0
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -1475,7 +1502,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("SubViewportContainer/SubViewport/Camera3D/Untitled/cat/Cube:visible")
+tracks/15/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/cat/Cube:visible")
 tracks/15/interp = 0
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -1509,7 +1536,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery:visible")
+tracks/18/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery:visible")
 tracks/18/interp = 0
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -1521,7 +1548,7 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:position")
+tracks/19/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:position")
 tracks/19/interp = 0
 tracks/19/loop_wrap = true
 tracks/19/keys = {
@@ -1533,7 +1560,7 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:scale")
+tracks/20/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:scale")
 tracks/20/interp = 0
 tracks/20/loop_wrap = true
 tracks/20/keys = {
@@ -1545,7 +1572,7 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:mesh:material:shader_parameter/albedo_color")
+tracks/21/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery/MeshInstance3D:mesh:material:shader_parameter/albedo_color")
 tracks/21/interp = 0
 tracks/21/loop_wrap = true
 tracks/21/keys = {
@@ -1569,7 +1596,7 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("SubViewportContainer/SubViewport/Camera3D/bkg/Plane:position")
+tracks/23/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg/Plane:position")
 tracks/23/interp = 0
 tracks/23/loop_wrap = true
 tracks/23/keys = {
@@ -1581,7 +1608,7 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("SubViewportContainer/SubViewport/Camera3D/bkg/Plane:scale")
+tracks/24/path = NodePath("ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg/Plane:scale")
 tracks/24/interp = 0
 tracks/24/loop_wrap = true
 tracks/24/keys = {
@@ -1601,56 +1628,30 @@ _data = {
 background_energy_multiplier = 0.0
 ambient_light_energy = 0.0
 
-[sub_resource type="Environment" id="Environment_hctix"]
-background_mode = 3
-glow_enabled = true
-glow_intensity = 1.0
-glow_hdr_threshold = 0.0
-glow_hdr_scale = 2.71
-glow_hdr_luminance_cap = 85.61
-
-[sub_resource type="World3D" id="World3D_ipeh8"]
-environment = SubResource("Environment_hctix")
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_dvey8"]
-viewport_path = NodePath("SubViewport2")
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uj3ro"]
-
-[sub_resource type="Gradient" id="Gradient_hctix"]
-colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.05882353)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ipeh8"]
-gradient = SubResource("Gradient_hctix")
-width = 1
-fill_to = Vector2(0, 1)
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hctix"]
-blend_mode = 3
-
 [node name="Node3D" type="Node3D" unique_id=903079790]
 script = ExtResource("15_7ki8r")
 
-[node name="SubViewport2" type="SubViewport" parent="." unique_id=451658771]
+[node name="ResourcePreloader" type="ResourcePreloader" parent="." unique_id=121116178]
+
+[node name="SubViewport2" type="SubViewport" parent="ResourcePreloader" unique_id=451658771]
 size = Vector2i(128, 160)
 
-[node name="Sprite2D" type="Sprite2D" parent="SubViewport2" unique_id=830682723]
+[node name="Sprite2D" type="Sprite2D" parent="ResourcePreloader/SubViewport2" unique_id=830682723]
 material = SubResource("ShaderMaterial_owm5q")
 texture = SubResource("ViewportTexture_uj3ro")
 centered = false
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=578943039]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="ResourcePreloader" unique_id=578943039]
 z_as_relative = false
 texture_filter = 1
 offset_right = 128.0
 offset_bottom = 160.0
 scale = Vector2(3, 3)
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=848045966]
+[node name="SubViewport" type="SubViewport" parent="ResourcePreloader/SubViewportContainer" unique_id=848045966]
 handle_input_locally = false
 snap_2d_transforms_to_pixel = true
 snap_2d_vertices_to_pixel = true
-use_occlusion_culling = true
 canvas_item_default_texture_filter = 0
 positional_shadow_atlas_size = 0
 positional_shadow_atlas_16_bits = false
@@ -1662,97 +1663,97 @@ oversampling = false
 size = Vector2i(128, 160)
 render_target_update_mode = 4
 
-[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1513766796]
+[node name="Camera3D" type="Camera3D" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=1513766796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.975, -0.485, -1.365)
 projection = 2
 size = 0.1
 near = 0.1
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=885914124]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=885914124]
 transform = Transform3D(0.80385685, 0, -0.5948228, 0, 1, 0, 0.5948228, 0, 0.80385685, 0.64338356, 0.485, -3.7535305)
 skeleton = NodePath("../..")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=1285459173]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1285459173]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 light_energy = 1.284
 
-[node name="Untitled" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=1720887161 instance=ExtResource("2_ashd6")]
+[node name="Untitled" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1720887161 instance=ExtResource("2_ashd6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61, 1.51, -7.76)
 
-[node name="Sphere" parent="SubViewportContainer/SubViewport/Camera3D/Untitled" index="0" unique_id=2101135053]
+[node name="Sphere" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled" index="0" unique_id=2101135053]
 material_override = SubResource("ShaderMaterial_n0m80")
 
-[node name="glasses" parent="SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere" index="0" unique_id=124296854 instance=ExtResource("6_1hynw")]
+[node name="glasses" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere" index="0" unique_id=124296854 instance=ExtResource("6_1hynw")]
 transform = Transform3D(0.67499995, -1.4901161e-08, 8.881784e-16, 0, -2.9505188e-08, -0.675, 2.9802322e-08, 1.3499999, -5.901037e-08, 0, 0.273, 0.9679997)
 visible = false
 
-[node name="Plane" parent="SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses" index="0" unique_id=1008206764]
+[node name="Plane" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses" index="0" unique_id=1008206764]
 transform = Transform3D(0.99999994, -2.9802322e-08, 0, 2.9802322e-08, 0.99999994, -4.440892e-16, 0, 4.440892e-16, 0.9999999, 0, 0, 0)
 material_override = ExtResource("7_xll7g")
 
-[node name="Plane2" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses" unique_id=746634445]
+[node name="Plane2" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses" unique_id=746634445]
 transform = Transform3D(-0.9999999, -8.754432e-08, 4.5519144e-15, 8.754432e-08, -0.9999999, 8.742278e-08, -3.7747583e-15, 8.742277e-08, 0.9999999, 0.0037231445, -1.4355602, 9.536743e-07)
 material_override = ExtResource("7_xll7g")
 mesh = SubResource("ArrayMesh_4f0ws")
 skeleton = NodePath("")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/Untitled" unique_id=2044538470]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled" unique_id=2044538470]
 transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.216, 0.15, -0.56, 0)
 visible = false
 mesh = SubResource("TextMesh_iurp6")
 
-[node name="cat" parent="SubViewportContainer/SubViewport/Camera3D/Untitled" unique_id=1730879684 instance=ExtResource("8_iurp6")]
+[node name="cat" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled" unique_id=1730879684 instance=ExtResource("8_iurp6")]
 transform = Transform3D(-3.7373237e-08, 0, -0.855, 0, 0.855, 0, 0.855, 0, -3.7373237e-08, 0, -0.075, 0)
 
-[node name="Cube" parent="SubViewportContainer/SubViewport/Camera3D/Untitled/cat" index="0" unique_id=1677626677]
+[node name="Cube" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/cat" index="0" unique_id=1677626677]
 visible = false
 material_override = ExtResource("9_6o7q6")
 
-[node name="bkg" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=1812480177 instance=ExtResource("10_pkbni")]
+[node name="bkg" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1812480177 instance=ExtResource("10_pkbni")]
 
-[node name="Plane" parent="SubViewportContainer/SubViewport/Camera3D/bkg" index="0" unique_id=1139563731]
+[node name="Plane" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg" index="0" unique_id=1139563731]
 transform = Transform3D(29.445, 0, 0, 0, -1.298884e-06, -39.665, 0, 29.715, -1.7338123e-06, 0.475, -2.354, -73.315)
 material_override = ExtResource("11_vvw4g")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/bkg" unique_id=1741997601]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg" unique_id=1741997601]
 transform = Transform3D(95.151825, 95.151825, 0, -95.151825, 95.151825, 0, 0, 0, 134.565, 13.25968, -6.6240015, -57.358517)
 material_override = SubResource("ShaderMaterial_ipeh8")
 mesh = SubResource("QuadMesh_hctix")
 
-[node name="battery" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=1857622995 instance=ExtResource("12_yu0oo")]
+[node name="battery" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1857622995 instance=ExtResource("12_yu0oo")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.55, -10.72)
 visible = false
 
-[node name="Cylinder" parent="SubViewportContainer/SubViewport/Camera3D/battery" index="0" unique_id=219849760]
+[node name="Cylinder" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery" index="0" unique_id=219849760]
 surface_material_override/0 = ExtResource("13_qlssn")
 surface_material_override/1 = ExtResource("14_owm5q")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1346760121]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1346760121]
 transform = Transform3D(-4.6989743e-07, 0, 1, 0, 7.005, 0, -10.75, 0, -4.371139e-08, -2.695, -1.165, 0)
 mesh = SubResource("QuadMesh_ipeh8")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1507614517]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1507614517]
 transform = Transform3D(1.63, -9.068712e-08, 3.96406e-15, 0, -7.1249566e-08, -1.63, 9.068712e-08, 1.63, -7.1249566e-08, 0, 0, 0)
 mesh = SubResource("CylinderMesh_n0m80")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1169094657]
+[node name="OmniLight3D" type="OmniLight3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery" unique_id=1169094657]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6633196, 1.6470301, 1.1920929e-06)
 light_energy = 11.04
 omni_range = 5.324
 omni_attenuation = 0.0
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="SubViewportContainer/SubViewport/Camera3D/battery" unique_id=745888468]
+[node name="OmniLight3D2" type="OmniLight3D" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery" unique_id=745888468]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6633196, -1.0996442, 1.1920929e-06)
 light_energy = 11.04
 omni_range = 5.324
 omni_attenuation = 0.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport" unique_id=533409432]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=533409432]
 audio_max_polyphony = 1
 libraries/ = SubResource("AnimationLibrary_tdgag")
 autoplay = &"title"
 
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/AnimationPlayer" unique_id=1734451117]
+[node name="ColorRect" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer" unique_id=1734451117]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1760,35 +1761,35 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="CanvasGroup" type="CanvasGroup" parent="SubViewportContainer/SubViewport/AnimationPlayer" unique_id=921925930]
+[node name="CanvasGroup" type="CanvasGroup" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer" unique_id=921925930]
 
-[node name="ColorRect2" type="ColorRect" parent="SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup" unique_id=1089443207]
+[node name="ColorRect2" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup" unique_id=1089443207]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 220.0
-offset_bottom = 322.33997
+offset_bottom = 322.3399
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(64, 243.555)
 color = Color(1, 0, 0.39215687, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=9762842]
+[node name="Sprite2D" type="Sprite2D" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=9762842]
 position = Vector2(-139, -0.24201584)
 scale = Vector2(2.462983, 1.2339581)
 texture = SubResource("GradientTexture2D_ashd6")
 centered = false
 
-[node name="Sprite2D2" type="Sprite2D" parent="SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=1888204267]
+[node name="Sprite2D2" type="Sprite2D" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=1888204267]
 position = Vector2(64, 250)
 scale = Vector2(0.8945729, 0.9197751)
 
-[node name="Label" type="RichTextLabel" parent="SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=41729449]
+[node name="Label" type="RichTextLabel" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=41729449]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86963
+offset_bottom = 366.86975
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1804,12 +1805,12 @@ text = "[b]CHIME[/b] animation  meme
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="RichTextLabel" parent="SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=666874228]
+[node name="Label2" type="RichTextLabel" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer/CanvasGroup/ColorRect2" unique_id=666874228]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05472
+offset_bottom = 368.05484
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1822,7 +1823,7 @@ by:
 "
 vertical_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport" unique_id=1402666611]
+[node name="ColorRect" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=1402666611]
 material = SubResource("CanvasItemMaterial_nn6s0")
 anchors_preset = 15
 anchor_right = 1.0
@@ -1830,14 +1831,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect2" type="ColorRect" parent="SubViewportContainer/SubViewport" unique_id=969594945]
+[node name="ColorRect2" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=969594945]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="RichTextLabel" parent="SubViewportContainer/SubViewport" unique_id=460497909]
+[node name="Label" type="RichTextLabel" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=460497909]
 visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = -0.99999994
@@ -1858,7 +1859,7 @@ text = "[b]CHIME[/b] animation  meme
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="RichTextLabel" parent="SubViewportContainer/SubViewport" unique_id=414195041]
+[node name="Label2" type="RichTextLabel" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=414195041]
 visible = false
 offset_left = 5.0
 offset_top = 54.0
@@ -1881,7 +1882,7 @@ Song: Chime & Adam Tell - Whole (Rob Gasser Remix) [NCS Release]
 
 "
 
-[node name="Button" type="Button" parent="SubViewportContainer/SubViewport" unique_id=868712853]
+[node name="Button" type="Button" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=868712853]
 visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = 32.0
@@ -1894,7 +1895,7 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_adt1y")
 theme_override_styles/hover = SubResource("StyleBoxTexture_owm5q")
 text = "Replay?"
 
-[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport" unique_id=800074126]
+[node name="Label3" type="Label" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=800074126]
 modulate = Color(1, 1, 1, 0)
 offset_left = 1.0
 offset_top = 147.33333
@@ -1904,6 +1905,56 @@ theme_override_fonts/font = ExtResource("23_qlssn")
 theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
 
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="ResourcePreloader" unique_id=1949499441]
+z_as_relative = false
+texture_filter = 2
+offset_right = 384.0
+offset_bottom = 480.0
+mouse_filter = 2
+
+[node name="SubViewport2" type="SubViewport" parent="ResourcePreloader/SubViewportContainer2" unique_id=1123073662]
+own_world_3d = true
+world_3d = SubResource("World3D_ipeh8")
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+use_hdr_2d = true
+canvas_item_default_texture_filter = 0
+audio_listener_enable_2d = true
+positional_shadow_atlas_size = 0
+positional_shadow_atlas_16_bits = false
+positional_shadow_atlas_quad_0 = 0
+positional_shadow_atlas_quad_1 = 0
+positional_shadow_atlas_quad_2 = 0
+positional_shadow_atlas_quad_3 = 0
+size = Vector2i(384, 480)
+render_target_clear_mode = 2
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="ResourcePreloader/SubViewportContainer2/SubViewport2" unique_id=1113274380]
+modulate = Color(1.206, 1.206, 1.206, 0.247)
+self_modulate = Color(1.2061527, 1.2061527, 1.2061527, 1)
+scale = Vector2(3, 3)
+texture = SubResource("ViewportTexture_dvey8")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ResourcePreloader/SubViewportContainer2/SubViewport2" unique_id=98361380]
+material = SubResource("CanvasItemMaterial_uj3ro")
+position = Vector2(0, 240)
+scale = Vector2(384, 7.5)
+texture = SubResource("GradientTexture2D_ipeh8")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ResourcePreloader/SubViewportContainer2/SubViewport2" unique_id=1690173708]
+texture_repeat = 2
+material = SubResource("CanvasItemMaterial_hctix")
+texture = ExtResource("32_hctix")
+centered = false
+region_enabled = true
+region_rect = Rect2(0.305, -0.97, 384, 480)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ResourcePreloader/SubViewportContainer2/SubViewport2" unique_id=286864435]
+stream = ExtResource("17_n5kw2")
+
 [node name="ali chimes-occonly" parent="." unique_id=893249008 instance=ExtResource("1_qv8pt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 
@@ -1911,30 +1962,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.13473946, 2.7531648, 0.0015489005, -3.287772, -0.5228258)
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=1210149586]
-bones/0/position = Vector3(-0.0003936647, 0.9677972, -0.047737285)
-bones/0/rotation = Quaternion(-0.13589051, 0.0043043536, 0.00095197314, 0.9907141)
-bones/1/rotation = Quaternion(0.0011945729, -0.007946421, 0.0011939706, 0.99996704)
-bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526603e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.047310643, 1.0671378e-11, 1.12768985e-08, 0.99888027)
-bones/7/position = Vector3(0.018299263, 0.074409194, 0.025368348)
-bones/8/position = Vector3(-0.024396243, 0.124462955, -0.005817602)
-bones/8/rotation = Quaternion(0.5619339, -0.115549184, 0.14691487, 0.80578834)
-bones/9/rotation = Quaternion(-0.005103543, -0.11522776, -0.0077494616, 0.9932958)
-bones/10/rotation = Quaternion(-0.00695739, -0.10040095, 0.010025855, 0.9948722)
-bones/11/position = Vector3(-0.018299196, 0.07519001, 0.025399823)
-bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
-bones/12/position = Vector3(0.024511883, 0.12542553, 0.0005646148)
-bones/12/rotation = Quaternion(0.58663225, 0.05533436, -0.19032772, 0.7852236)
-bones/13/rotation = Quaternion(0.0032280104, 0.11536343, -0.023454329, 0.9930412)
-bones/14/rotation = Quaternion(0.024034148, -0.12948857, 0.022800434, 0.99102736)
-bones/19/position = Vector3(0.0678555, 0.012154702, -2.900447e-05)
-bones/19/rotation = Quaternion(0.981105, 0.014528147, -0.0071431347, 0.19279769)
-bones/20/rotation = Quaternion(0.0670265, 0.019328848, -0.013349366, 0.99747473)
-bones/21/rotation = Quaternion(-0.6837595, -0.02282026, 0.031599045, 0.7286657)
-bones/24/position = Vector3(-0.06712404, 0.016111411, -0.00023514719)
-bones/24/rotation = Quaternion(0.9588782, -0.03803846, -0.011281728, -0.28103116)
-bones/25/rotation = Quaternion(0.5451289, -0.04036136, -0.028062725, 0.8369097)
-bones/26/rotation = Quaternion(-0.7800304, 0.044846807, -0.027807292, 0.6235128)
+bones/0/position = Vector3(-0.009453123, 0.34709042, 1.3932164)
+bones/0/rotation = Quaternion(0.57788783, 0.029021801, 0.0007902081, 0.8155996)
+bones/1/rotation = Quaternion(0.20891118, -0.035369404, 0.008271945, 0.9772598)
+bones/2/rotation = Quaternion(-0.026529452, 0.0031156542, -7.526693e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.04731063, -2.1981517e-10, 1.103755e-08, 0.9988802)
+bones/7/position = Vector3(0.018296413, 0.07431423, 0.025381844)
+bones/7/rotation = Quaternion(0.51474273, 0.5396355, 0.4825646, -0.45930922)
+bones/8/position = Vector3(-0.021224417, 0.12460123, -0.0018217734)
+bones/8/rotation = Quaternion(0.49254847, 0.07444082, -0.008954166, 0.8670493)
+bones/9/rotation = Quaternion(-0.0051035616, -0.115227744, -0.0077494695, 0.9932958)
+bones/10/rotation = Quaternion(-0.0069574085, -0.10040095, 0.010025841, 0.9948723)
+bones/11/position = Vector3(-0.01829643, 0.075038224, 0.02537367)
+bones/11/rotation = Quaternion(-0.5147428, 0.5396352, 0.4825646, 0.45930937)
+bones/12/position = Vector3(0.027690837, 0.12526155, -0.003432905)
+bones/12/rotation = Quaternion(0.46550283, -0.12513655, 0.04509769, 0.8749938)
+bones/13/rotation = Quaternion(0.003228, 0.11536342, -0.023454335, 0.99304116)
+bones/14/rotation = Quaternion(0.024034148, -0.12948857, 0.022800442, 0.99102736)
+bones/19/position = Vector3(0.06777799, 0.016247468, 0.0030295355)
+bones/19/rotation = Quaternion(0.99635994, 0.047053263, 0.025364397, -0.06640484)
+bones/20/rotation = Quaternion(0.054310717, -0.01813599, -0.007868743, 0.99832845)
+bones/21/rotation = Quaternion(0.01760076, 0.00397647, 0.029020336, 0.99941593)
+bones/24/position = Vector3(-0.06704655, 0.012018805, -0.0032931706)
+bones/24/rotation = Quaternion(0.99741256, -0.012585861, 0.021171061, -0.067539446)
+bones/25/rotation = Quaternion(0.051396605, -0.025725659, 0.01931747, 0.99816006)
+bones/26/rotation = Quaternion(0.018624881, 0.044458814, -0.052189276, 0.9974733)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
 [node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=790192537]
@@ -1970,56 +2022,11 @@ libraries/ = SubResource("AnimationLibrary_vrh8r")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=282161326]
 environment = SubResource("Environment_y3rux")
 
-[node name="SubViewportContainer2" type="SubViewportContainer" parent="." unique_id=1949499441]
-z_as_relative = false
-texture_filter = 2
-offset_right = 384.0
-offset_bottom = 480.0
-mouse_filter = 2
+[connection signal="pressed" from="ResourcePreloader/SubViewportContainer/SubViewport/Button" to="." method="_on_button_pressed"]
 
-[node name="SubViewport2" type="SubViewport" parent="SubViewportContainer2" unique_id=1123073662]
-own_world_3d = true
-world_3d = SubResource("World3D_ipeh8")
-handle_input_locally = false
-snap_2d_transforms_to_pixel = true
-snap_2d_vertices_to_pixel = true
-use_occlusion_culling = true
-use_hdr_2d = true
-canvas_item_default_texture_filter = 0
-audio_listener_enable_2d = true
-size = Vector2i(384, 480)
-render_target_clear_mode = 2
-render_target_update_mode = 4
-
-[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1113274380]
-modulate = Color(1.206, 1.206, 1.206, 0.247)
-self_modulate = Color(1.2061527, 1.2061527, 1.2061527, 1)
-scale = Vector2(3, 3)
-texture = SubResource("ViewportTexture_dvey8")
-centered = false
-
-[node name="Sprite2D2" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=98361380]
-material = SubResource("CanvasItemMaterial_uj3ro")
-position = Vector2(0, 240)
-scale = Vector2(384, 7.5)
-texture = SubResource("GradientTexture2D_ipeh8")
-
-[node name="Sprite2D3" type="Sprite2D" parent="SubViewportContainer2/SubViewport2" unique_id=1690173708]
-texture_repeat = 2
-material = SubResource("CanvasItemMaterial_hctix")
-texture = ExtResource("32_hctix")
-centered = false
-region_enabled = true
-region_rect = Rect2(0.305, -0.97, 384, 480)
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SubViewportContainer2/SubViewport2" unique_id=286864435]
-stream = ExtResource("17_n5kw2")
-
-[connection signal="pressed" from="SubViewportContainer/SubViewport/Button" to="." method="_on_button_pressed"]
-
-[editable path="SubViewportContainer/SubViewport/Camera3D/Untitled"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/Untitled/cat"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/bkg"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/battery"]
+[editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled"]
+[editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/Sphere/glasses"]
+[editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled/cat"]
+[editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg"]
+[editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/battery"]
 [editable path="ali chimes-occonly"]

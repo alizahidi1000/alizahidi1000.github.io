@@ -39,6 +39,10 @@ window/stretch/mode="canvas_items"
 window/dpi/allow_hidpi=false
 window/vsync/vsync_mode=0
 
+[editor]
+
+import/use_multiple_threads=false
+
 [gui]
 
 theme/default_font_hinting=0

@@ -41,6 +41,7 @@ window/vsync/vsync_mode=0
 
 [editor]
 
+movie_writer/mix_rate=11025
 import/use_multiple_threads=false
 
 [gui]

@@ -662,7 +662,7 @@ tracks/17/path = NodePath("Label2:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(41.451767),
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(5, 48.005)]
@@ -674,10 +674,10 @@ tracks/18/path = NodePath("Button:position")
 tracks/18/interp = 0
 tracks/18/loop_wrap = true
 tracks/18/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(43.44236),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(32, 126.82)]
+"values": [Vector2(32, 123.86)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
@@ -844,10 +844,10 @@ tracks/9/path = NodePath("Label2:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0, 0.016666668),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true, false]
+"values": [false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tdgag"]
@@ -1780,7 +1780,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 220.0
-offset_bottom = 322.33984
+offset_bottom = 322.3399
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(64, 243.555)
@@ -1900,7 +1900,7 @@ modulate = Color(1, 1, 1, 0)
 offset_left = 32.0
 offset_top = 136.0
 offset_right = 96.0
-offset_bottom = 154.99997
+offset_bottom = 155.00002
 theme_override_fonts/font = ExtResource("17_pkbni")
 theme_override_styles/normal = SubResource("StyleBoxTexture_pkbni")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_adt1y")

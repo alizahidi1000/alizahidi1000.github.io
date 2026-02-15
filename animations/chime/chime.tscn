@@ -1801,7 +1801,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86978
+offset_bottom = 366.8697
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1918,13 +1918,12 @@ theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
 
 [node name="ColorRect3" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=2052780659]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.94509804)
+color = Color(0, 0, 0, 0.99607843)
 
 [node name="Label" type="Label" parent="ResourcePreloader/SubViewportContainer/SubViewport/ColorRect3" unique_id=687073877]
 layout_mode = 0
@@ -1993,28 +1992,29 @@ transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.1347394
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=1262734800]
 bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
-bones/0/rotation = Quaternion(0.031145908, 0.00486495, -0.000882938, 0.9995027)
-bones/1/rotation = Quaternion(0.0011945732, -0.007946421, 0.0011939704, 0.99996704)
-bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526603e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.06656031, -0.000846172, -0.0010253227, 0.9977816)
-bones/7/position = Vector3(0.018299993, 0.09919809, 0.02668231)
-bones/8/position = Vector3(-0.019704772, 0.10051287, 0.008025404)
-bones/8/rotation = Quaternion(-0.0054590167, 0.7079015, 0.0013730355, -0.7062887)
-bones/9/rotation = Quaternion(-0.083496116, -0.05801731, -0.6430573, 0.7590386)
-bones/10/rotation = Quaternion(0.15476651, 0.009132727, 0.6667157, 0.72900903)
-bones/11/position = Vector3(-0.018300006, 0.103106305, 0.02689021)
-bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
-bones/12/position = Vector3(0.019652065, 0.1000837, 0.010321543)
-bones/12/rotation = Quaternion(-0.03561641, -0.69515187, -0.005222117, -0.7179612)
-bones/13/rotation = Quaternion(-0.052453764, 0.09038294, 0.5874853, 0.8024591)
-bones/14/rotation = Quaternion(0.036173597, -0.1588471, -0.62226814, 0.76566404)
+bones/0/rotation = Quaternion(0.031145908, 0.00486495, -0.0008829379, 0.9995027)
+bones/1/rotation = Quaternion(0.0011945735, -0.007946421, 0.0011939706, 0.99996704)
+bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.5266034e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.067375496, -0.0008433801, -0.0010219394, 0.9977268)
+bones/7/position = Vector3(0.018299993, 0.07565157, 0.025429657)
+bones/7/rotation = Quaternion(0.47638795, 0.49934247, 0.52414906, -0.49897853)
+bones/8/position = Vector3(-0.0206558, 0.12461372, 0.04493708)
+bones/8/rotation = Quaternion(-0.51129436, 0.5093157, -0.49020764, 0.48874536)
+bones/9/rotation = Quaternion(-0.005103548, -0.115227744, -0.007749469, 0.9932958)
+bones/10/rotation = Quaternion(-0.0069573815, -0.10040093, 0.010025848, 0.9948723)
+bones/11/position = Vector3(-0.018300004, 0.07565157, 0.025429657)
+bones/11/rotation = Quaternion(-0.47638813, 0.49934232, 0.5241489, 0.49897859)
+bones/12/position = Vector3(0.020703714, 0.12559015, 0.041483827)
+bones/12/rotation = Quaternion(-0.52982503, -0.50672364, 0.48515695, 0.47659135)
+bones/13/rotation = Quaternion(0.0032280143, 0.11536338, -0.023454359, 0.9930412)
+bones/14/rotation = Quaternion(0.02403415, -0.12948857, 0.022800444, 0.99102736)
 bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
-bones/19/rotation = Quaternion(0.999325, 0.03085404, 0.005227986, 0.019242978)
+bones/19/rotation = Quaternion(0.999325, 0.03085404, 0.005227986, 0.01924298)
 bones/20/rotation = Quaternion(0.01019522, -0.0013837009, -0.013620114, 0.9998543)
-bones/21/rotation = Quaternion(-0.52018255, -0.021646755, 0.037761386, 0.8529453)
+bones/21/rotation = Quaternion(-0.52018255, -0.021646755, 0.03776139, 0.8529453)
 bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
-bones/24/rotation = Quaternion(0.9993801, -0.028939765, 0.0061904644, 0.019069072)
-bones/25/rotation = Quaternion(0.010204021, -0.0026969826, 0.0136135295, 0.99985164)
+bones/24/rotation = Quaternion(0.9993473, -0.028949922, 0.00614279, 0.020715099)
+bones/25/rotation = Quaternion(0.010204021, -0.0026969826, 0.013613529, 0.99985164)
 bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.036532383, 0.85289174)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 

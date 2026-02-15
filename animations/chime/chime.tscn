@@ -1801,7 +1801,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 215.86737
 offset_right = 133.41447
-offset_bottom = 366.86975
+offset_bottom = 366.86978
 scale = Vector2(1.0045961, 1.0000962)
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("3_y3rux")
@@ -1822,7 +1822,7 @@ layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05487
+offset_bottom = 368.05484
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1918,6 +1918,7 @@ theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
 
 [node name="ColorRect3" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=2052780659]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1984,40 +1985,40 @@ region_rect = Rect2(0.305, -0.97, 384, 480)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ResourcePreloader/SubViewportContainer2/SubViewport2" unique_id=286864435]
 stream = ExtResource("17_n5kw2")
 
-[node name="ali chimes-occonly" parent="." unique_id=893249008 instance=ExtResource("1_qv8pt")]
+[node name="ali chimes-occonly" parent="." unique_id=1344073561 instance=ExtResource("1_qv8pt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 
-[node name="metarig" parent="ali chimes-occonly" index="0" unique_id=1376603146]
+[node name="metarig" parent="ali chimes-occonly" index="0" unique_id=636697079]
 transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.13473946, 2.7531648, 0.0015489005, -3.287772, -0.5228258)
 
-[node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=1210149586]
-bones/0/position = Vector3(-0.0003936647, 1.1225011, -0.040166106)
-bones/0/rotation = Quaternion(0.053039283, 0.0048831287, -0.0007761259, 0.99858016)
-bones/1/rotation = Quaternion(0.0011945728, -0.007946421, 0.0011939703, 0.99996704)
+[node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=1262734800]
+bones/0/position = Vector3(-0.00039366467, 0.24309635, -0.08320402)
+bones/0/rotation = Quaternion(0.031145908, 0.00486495, -0.000882938, 0.9995027)
+bones/1/rotation = Quaternion(0.0011945732, -0.007946421, 0.0011939704, 0.99996704)
 bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526603e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.12800081, -0.010156658, -0.0043059955, 0.99171275)
-bones/7/position = Vector3(0.018299077, 0.07440304, 0.025369223)
-bones/8/position = Vector3(-0.025823819, 0.12437455, 0.035581607)
-bones/8/rotation = Quaternion(-0.40110978, 0.45904407, -0.5500986, 0.57077235)
-bones/9/rotation = Quaternion(-0.005103545, -0.11522776, -0.007749463, 0.9932958)
-bones/10/rotation = Quaternion(-0.006957392, -0.10040095, 0.010025854, 0.9948723)
-bones/11/position = Vector3(-0.018299017, 0.07518017, 0.025398126)
+bones/4/rotation = Quaternion(0.06656031, -0.000846172, -0.0010253227, 0.9977816)
+bones/7/position = Vector3(0.018299993, 0.09919809, 0.02668231)
+bones/8/position = Vector3(-0.019704772, 0.10051287, 0.008025404)
+bones/8/rotation = Quaternion(-0.0054590167, 0.7079015, 0.0013730355, -0.7062887)
+bones/9/rotation = Quaternion(-0.083496116, -0.05801731, -0.6430573, 0.7590386)
+bones/10/rotation = Quaternion(0.15476651, 0.009132727, 0.6667157, 0.72900903)
+bones/11/position = Vector3(-0.018300006, 0.103106305, 0.02689021)
 bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
-bones/12/position = Vector3(0.025870685, 0.12535071, 0.032181095)
-bones/12/rotation = Quaternion(-0.51760375, -0.568976, 0.4713498, 0.43148813)
-bones/13/rotation = Quaternion(0.00322801, 0.11536343, -0.023454333, 0.9930412)
-bones/14/rotation = Quaternion(0.02403415, -0.12948857, 0.022800436, 0.99102736)
-bones/19/position = Vector3(0.06789926, 0.0015331963, 0.0014608961)
-bones/19/rotation = Quaternion(0.98479337, 0.02542805, -0.04739057, 0.16519597)
-bones/20/rotation = Quaternion(-0.085538745, 0.086837746, -0.0012118142, 0.9925426)
-bones/21/rotation = Quaternion(-0.33179024, -0.021854041, 0.05610172, 0.94143)
-bones/24/position = Vector3(-0.06709089, -0.023464553, 0.0010641995)
-bones/24/rotation = Quaternion(0.99849606, -0.008895677, 0.025599936, -0.04765803)
-bones/25/rotation = Quaternion(0.21305093, -0.020016706, 0.012052292, 0.97676176)
-bones/26/rotation = Quaternion(-0.6446304, 0.052788436, -0.022578007, 0.7623355)
+bones/12/position = Vector3(0.019652065, 0.1000837, 0.010321543)
+bones/12/rotation = Quaternion(-0.03561641, -0.69515187, -0.005222117, -0.7179612)
+bones/13/rotation = Quaternion(-0.052453764, 0.09038294, 0.5874853, 0.8024591)
+bones/14/rotation = Quaternion(0.036173597, -0.1588471, -0.62226814, 0.76566404)
+bones/19/position = Vector3(0.067882404, 0.014272632, 0.00052082504)
+bones/19/rotation = Quaternion(0.999325, 0.03085404, 0.005227986, 0.019242978)
+bones/20/rotation = Quaternion(0.01019522, -0.0013837009, -0.013620114, 0.9998543)
+bones/21/rotation = Quaternion(-0.52018255, -0.021646755, 0.037761386, 0.8529453)
+bones/24/position = Vector3(-0.06715093, 0.013993375, -0.00078502554)
+bones/24/rotation = Quaternion(0.9993801, -0.028939765, 0.0061904644, 0.019069072)
+bones/25/rotation = Quaternion(0.010204021, -0.0026969826, 0.0136135295, 0.99985164)
+bones/26/rotation = Quaternion(-0.52027035, 0.023663009, -0.036532383, 0.85289174)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
-[node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=790192537]
+[node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=70557018]
 material_override = ExtResource("2_aproi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ali chimes-occonly/metarig/Skeleton3D/Cube" index="0" unique_id=1964718383]
@@ -2026,22 +2027,22 @@ mesh = SubResource("ArrayMesh_owm5q")
 skin = SubResource("Skin_qks7l")
 skeleton = NodePath("../..")
 
-[node name="Plane" parent="ali chimes-occonly/metarig/Skeleton3D" index="1" unique_id=235802187]
+[node name="Plane" parent="ali chimes-occonly/metarig/Skeleton3D" index="1" unique_id=16800200]
 transform = Transform3D(1.08, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 surface_material_override/0 = ExtResource("3_nvhes")
 
-[node name="Plane_001" parent="ali chimes-occonly/metarig/Skeleton3D" index="2" unique_id=394195277]
+[node name="Plane_001" parent="ali chimes-occonly/metarig/Skeleton3D" index="2" unique_id=1126154494]
 transform = Transform3D(1, 0, 0, 0, 1, -3.7252903e-09, 0, 3.7252903e-09, 1, 0, -0.03, 0)
 material_override = ExtResource("4_4x2a6")
 
-[node name="Plane_002" parent="ali chimes-occonly/metarig/Skeleton3D" index="3" unique_id=859290566]
+[node name="Plane_002" parent="ali chimes-occonly/metarig/Skeleton3D" index="3" unique_id=285204753]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03, 0)
 material_override = ExtResource("5_veyu0")
 
-[node name="Plane_003" parent="ali chimes-occonly/metarig/Skeleton3D" index="4" unique_id=1160643123]
+[node name="Plane_003" parent="ali chimes-occonly/metarig/Skeleton3D" index="4" unique_id=59940165]
 material_override = ExtResource("6_nn6s0")
 
-[node name="Cube_001" parent="ali chimes-occonly" index="1" unique_id=1450233572]
+[node name="Cube_001" parent="ali chimes-occonly" index="1" unique_id=1410992667]
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1740167373]

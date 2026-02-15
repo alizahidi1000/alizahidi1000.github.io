@@ -120,7 +120,7 @@ curve_step = 10.0
 depth = 2.218
 
 [sub_resource type="Gradient" id="Gradient_owm5q"]
-colors = PackedColorArray(0, 1, 0.7137255, 0.5568628, 1, 1, 1, 0)
+colors = PackedColorArray(1, 0.7411765, 0.7137255, 0.5568628, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_uj3ro"]
 gradient = SubResource("Gradient_owm5q")
@@ -450,7 +450,7 @@ tracks/21/keys = {
 [sub_resource type="Animation" id="Animation_nn6s0"]
 resource_name = "new_animation"
 length = 50.0
-step = 0.0168
+step = 0.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -836,6 +836,18 @@ tracks/8/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Label2:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.016666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tdgag"]
@@ -1709,9 +1721,9 @@ transform = Transform3D(-3.7373237e-08, 0, -0.855, 0, 0.855, 0, 0.855, 0, -3.737
 visible = false
 material_override = ExtResource("9_6o7q6")
 
-[node name="bkg" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1812480177 instance=ExtResource("10_pkbni")]
+[node name="bkg" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D" unique_id=1653278636 instance=ExtResource("10_pkbni")]
 
-[node name="Plane" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg" index="0" unique_id=1139563731]
+[node name="Plane" parent="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/bkg" index="0" unique_id=1408179560]
 transform = Transform3D(29.445, 0, 0, 0, -1.298884e-06, -39.665, 0, 29.715, -1.7338123e-06, 0.475, -2.354, -73.315)
 material_override = ExtResource("11_vvw4g")
 
@@ -1751,7 +1763,7 @@ omni_attenuation = 0.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=533409432]
 audio_max_polyphony = 1
 libraries/ = SubResource("AnimationLibrary_tdgag")
-autoplay = &"title"
+autoplay = &"new_animation"
 
 [node name="ColorRect" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer" unique_id=1734451117]
 anchors_preset = 15
@@ -1768,7 +1780,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 220.0
-offset_bottom = 322.3399
+offset_bottom = 322.33984
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(64, 243.555)
@@ -1810,7 +1822,7 @@ layout_mode = 0
 offset_left = 4.0
 offset_top = 217.05347
 offset_right = 124.000015
-offset_bottom = 368.05484
+offset_bottom = 368.05487
 theme_override_fonts/normal_font = ExtResource("2_nn6s0")
 theme_override_fonts/bold_font = ExtResource("4_y3rux")
 theme_override_font_sizes/normal_font_size = 18
@@ -1888,7 +1900,7 @@ modulate = Color(1, 1, 1, 0)
 offset_left = 32.0
 offset_top = 136.0
 offset_right = 96.0
-offset_bottom = 154.99994
+offset_bottom = 154.99991
 theme_override_fonts/font = ExtResource("17_pkbni")
 theme_override_styles/normal = SubResource("StyleBoxTexture_pkbni")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_adt1y")
@@ -1904,6 +1916,23 @@ offset_bottom = 163.33333
 theme_override_fonts/font = ExtResource("23_qlssn")
 theme_override_font_sizes/font_size = 10
 text = "ali z. 2026   made in godot"
+
+[node name="ColorRect3" type="ColorRect" parent="ResourcePreloader/SubViewportContainer/SubViewport" unique_id=2052780659]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.94509804)
+
+[node name="Label" type="Label" parent="ResourcePreloader/SubViewportContainer/SubViewport/ColorRect3" unique_id=687073877]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 72.0
+offset_right = 104.0
+offset_bottom = 95.0
+theme_override_fonts/font = ExtResource("17_pkbni")
+text = "Loading..."
 
 [node name="SubViewportContainer2" type="SubViewportContainer" parent="ResourcePreloader" unique_id=1949499441]
 z_as_relative = false
@@ -1962,31 +1991,30 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9850202, 0, -1.625)
 transform = Transform3D(2.7564635, 0, 0, 0, 2.7531648, 0.13473946, 0, -0.13473946, 2.7531648, 0.0015489005, -3.287772, -0.5228258)
 
 [node name="Skeleton3D" parent="ali chimes-occonly/metarig" index="0" unique_id=1210149586]
-bones/0/position = Vector3(-0.009453123, 0.34709042, 1.3932164)
-bones/0/rotation = Quaternion(0.57788783, 0.029021801, 0.0007902081, 0.8155996)
-bones/1/rotation = Quaternion(0.20891118, -0.035369404, 0.008271945, 0.9772598)
-bones/2/rotation = Quaternion(-0.026529452, 0.0031156542, -7.526693e-05, 0.99964327)
-bones/4/rotation = Quaternion(0.04731063, -2.1981517e-10, 1.103755e-08, 0.9988802)
-bones/7/position = Vector3(0.018296413, 0.07431423, 0.025381844)
-bones/7/rotation = Quaternion(0.51474273, 0.5396355, 0.4825646, -0.45930922)
-bones/8/position = Vector3(-0.021224417, 0.12460123, -0.0018217734)
-bones/8/rotation = Quaternion(0.49254847, 0.07444082, -0.008954166, 0.8670493)
-bones/9/rotation = Quaternion(-0.0051035616, -0.115227744, -0.0077494695, 0.9932958)
-bones/10/rotation = Quaternion(-0.0069574085, -0.10040095, 0.010025841, 0.9948723)
-bones/11/position = Vector3(-0.01829643, 0.075038224, 0.02537367)
-bones/11/rotation = Quaternion(-0.5147428, 0.5396352, 0.4825646, 0.45930937)
-bones/12/position = Vector3(0.027690837, 0.12526155, -0.003432905)
-bones/12/rotation = Quaternion(0.46550283, -0.12513655, 0.04509769, 0.8749938)
-bones/13/rotation = Quaternion(0.003228, 0.11536342, -0.023454335, 0.99304116)
-bones/14/rotation = Quaternion(0.024034148, -0.12948857, 0.022800442, 0.99102736)
-bones/19/position = Vector3(0.06777799, 0.016247468, 0.0030295355)
-bones/19/rotation = Quaternion(0.99635994, 0.047053263, 0.025364397, -0.06640484)
-bones/20/rotation = Quaternion(0.054310717, -0.01813599, -0.007868743, 0.99832845)
-bones/21/rotation = Quaternion(0.01760076, 0.00397647, 0.029020336, 0.99941593)
-bones/24/position = Vector3(-0.06704655, 0.012018805, -0.0032931706)
-bones/24/rotation = Quaternion(0.99741256, -0.012585861, 0.021171061, -0.067539446)
-bones/25/rotation = Quaternion(0.051396605, -0.025725659, 0.01931747, 0.99816006)
-bones/26/rotation = Quaternion(0.018624881, 0.044458814, -0.052189276, 0.9974733)
+bones/0/position = Vector3(-0.0003936647, 1.1225011, -0.040166106)
+bones/0/rotation = Quaternion(0.053039283, 0.0048831287, -0.0007761259, 0.99858016)
+bones/1/rotation = Quaternion(0.0011945728, -0.007946421, 0.0011939703, 0.99996704)
+bones/2/rotation = Quaternion(-0.026529456, 0.0031156547, -7.526603e-05, 0.99964327)
+bones/4/rotation = Quaternion(0.12800081, -0.010156658, -0.0043059955, 0.99171275)
+bones/7/position = Vector3(0.018299077, 0.07440304, 0.025369223)
+bones/8/position = Vector3(-0.025823819, 0.12437455, 0.035581607)
+bones/8/rotation = Quaternion(-0.40110978, 0.45904407, -0.5500986, 0.57077235)
+bones/9/rotation = Quaternion(-0.005103545, -0.11522776, -0.007749463, 0.9932958)
+bones/10/rotation = Quaternion(-0.006957392, -0.10040095, 0.010025854, 0.9948723)
+bones/11/position = Vector3(-0.018299017, 0.07518017, 0.025398126)
+bones/11/rotation = Quaternion(-0.47638813, 0.4993423, 0.5241489, 0.49897859)
+bones/12/position = Vector3(0.025870685, 0.12535071, 0.032181095)
+bones/12/rotation = Quaternion(-0.51760375, -0.568976, 0.4713498, 0.43148813)
+bones/13/rotation = Quaternion(0.00322801, 0.11536343, -0.023454333, 0.9930412)
+bones/14/rotation = Quaternion(0.02403415, -0.12948857, 0.022800436, 0.99102736)
+bones/19/position = Vector3(0.06789926, 0.0015331963, 0.0014608961)
+bones/19/rotation = Quaternion(0.98479337, 0.02542805, -0.04739057, 0.16519597)
+bones/20/rotation = Quaternion(-0.085538745, 0.086837746, -0.0012118142, 0.9925426)
+bones/21/rotation = Quaternion(-0.33179024, -0.021854041, 0.05610172, 0.94143)
+bones/24/position = Vector3(-0.06709089, -0.023464553, 0.0010641995)
+bones/24/rotation = Quaternion(0.99849606, -0.008895677, 0.025599936, -0.04765803)
+bones/25/rotation = Quaternion(0.21305093, -0.020016706, 0.012052292, 0.97676176)
+bones/26/rotation = Quaternion(-0.6446304, 0.052788436, -0.022578007, 0.7623355)
 bones/28/rotation = Quaternion(-0.6871351, 0.6871388, -0.16686215, -0.16686115)
 
 [node name="Cube" parent="ali chimes-occonly/metarig/Skeleton3D" index="0" unique_id=790192537]
@@ -2022,6 +2050,7 @@ libraries/ = SubResource("AnimationLibrary_vrh8r")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=282161326]
 environment = SubResource("Environment_y3rux")
 
+[connection signal="animation_finished" from="ResourcePreloader/SubViewportContainer/SubViewport/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="ResourcePreloader/SubViewportContainer/SubViewport/Button" to="." method="_on_button_pressed"]
 
 [editable path="ResourcePreloader/SubViewportContainer/SubViewport/Camera3D/Untitled"]

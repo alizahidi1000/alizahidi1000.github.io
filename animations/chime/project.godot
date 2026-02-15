@@ -26,6 +26,7 @@ config/icon="uid://bi3fx5orloyl1"
 [audio]
 
 buses/default_bus_layout="uid://bv08bunrhuuj1"
+driver/output_latency.web=15
 driver/mix_rate=11025
 driver/mix_rate.web=11025
 
@@ -45,7 +46,6 @@ theme/default_font_subpixel_positioning=0
 
 [physics]
 
-common/max_physics_steps_per_frame=1
 common/enable_object_picking=false
 
 [rendering]
